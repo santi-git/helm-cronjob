@@ -68,7 +68,7 @@ jobs:
               - e2e-az2
 ```
 
-## Examples
+## Testing
 ```
 $ helm install test-cron-job .
 NAME:   cold-fly
