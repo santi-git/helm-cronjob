@@ -72,30 +72,30 @@ jobs:
 ```
 $ helm install test-cron-job .
 NAME:   cold-fly
-LAST DEPLOYED: Fri Feb  1 15:29:21 2019
+LAST DEPLOYED: Fri Feb  1 15:29:21 2022
 NAMESPACE: default
 STATUS: DEPLOYED
 
 RESOURCES:
 ==> v1beta1/CronJob
 NAME                    AGE
-cold-fly-hello-world    1s
-cold-fly-hello-ubuntu   1s
-cold-fly-hello-env-var  1s
+Aya-hello-world    1s
+Aya-hello-ubuntu   1s
+Aya-hello-env-var  1s
 ```
 list cronjobs:
 ```
 $ kubectl get cronjob
 NAME                     SCHEDULE      SUSPEND   ACTIVE    LAST SCHEDULE   AGE
-cold-fly-hello-env-var   * * * * *     False     0         23s             1m
-cold-fly-hello-ubuntu    */5 * * * *   False     0         23s             1m
-cold-fly-hello-world     * * * * *     False     0         23s             1m
+Aya-hello-env-var   * * * * *     False     0         23s             1m
+Aya-hello-ubuntu    */5 * * * *   False     0         23s             1m
+Aya-hello-world     * * * * *     False     0         23s             1m
 ```
 list jobs:
 ```
 $ kubectl get jobs
 NAME                                DESIRED   SUCCESSFUL   AGE
-cold-fly-hello-env-var-1549056600   1         1            45s
-cold-fly-hello-ubuntu-1549056600    1         1            45s
-cold-fly-hello-world-1549056600     1         1            45s
+Aya-hello-env-var-1549056600   1         1            45s
+Aya-hello-ubuntu-1549056600    1         1            45s
+Aya-hello-world-1549056600     1         1            45s
 ```
